@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title> Breadcrumbs & Images </title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        img{
+            margin: 10px;
+            background-color: red
+        }
+        .bs-example{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="example">
+        <div class="container">
+            <div class="row">
+                <ul class="breadcrumb">
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Bootstrap</a></li>
+                    <li class="active">Breadcrumb & Images</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    -------
+    Stylesheet Images trong bootstrap:
+    Ở phần này thì bootstrap hỗ trợ chúng ta 3 class dùng để trang trí style cho hình ảnh
+    <pre> 
+    	Ba hình đấy tương ứng với ba class dưới đây:
+
+	    Class img-rounded (Bo góc)
+	    Class img-circle (Tròn)
+	    Class img-thumbnail (Thu nhỏ)
+
+
+    </pre>
+
+     <div class="bs-example"> 
+        <div class="container">
+            <div class="row">
+            <h2>Images Bootstrap</h2>
+                <img src="img/hi.jpg" class="img-rounded" alt="Hình bo góc">
+                <img src="img/hi.jpg" class="img-circle" alt="Hình Tròn">
+                <img src="img/hi.jpg" class="img-thumbnail" alt="Hình Thumbnail">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
