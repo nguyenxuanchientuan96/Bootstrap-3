@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	Các website thường sử dụng ba kiểu form như là.
+
+    Vertical Form (Form dọc)
+    Horizontal Form (Form Ngang)
+    Inline Form (Form Thường).
+------------
+    1. Định dạng Vertical form
+
+    Đây là một dạng kiểu form phổ biến mà chúng ta thường dùng khi xây dựng giao diện website cho các trang liên hệ, đặt hàng..vvv
+
+    <div class="example">
+		<div class="container">
+	    <div class="row">
+	    <h2>Vertical Form</h2>
+	        <form>
+	        <div class="form-group">
+	            <label>Email</label>
+	            <input type="email" class="form-control" placeholder="Email">
+	        </div>
+	        <div class="form-group">
+	            <label>Mật Khẩu</label>
+	            <input type="password" class="form-control" placeholder="Password">
+	        </div>
+	        <div class="checkbox">
+	            <label><input type="checkbox"> Ghi Nhớ</label>
+	        </div>
+	        <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+	    </form>
+	    </div>
+	</div>
+	     
+	</div>
+
+	--------
+	2. Horizontal Form trong bootstrap 3
+	Kiểu form này định dạng hơi phức tạp một xíu và nó có kết hợp với Grid system để bố cục kích thước của form và tag label cho hợp lý. Để có thể làm việc tốt với kiểu form này tôi cần các bạn chú ý các class sau.
+
+    control-label (Khai báo class này ở tag label mới có thể gán class col-xs-x vào được)
+    form-horizontal (Định dạng kiểu form ngang)
+    col-xs-offset-2 (Canh lề trái)
+
+    <div class="example">
+        <div class="container">
+            <div class="row">
+                <h2>Horizontal Form</h2>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">Email</label>
+                        <div class="col-xs-10">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">Mật Khẩu</label>
+                        <div class="col-xs-10">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>   
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-offset-2 col-xs-10">    
+                            <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+                        </div>
+                    </div>    
+                </form>
+            </div>
+        </div>
+    </div>
+    ----------
+    <br>
+    3. Inline form trong bootstrap 3
+
+    <div class="example">
+        <div class="container">
+            <div class="row">
+                <h2>Inline Form</h2>
+                <form class="form-inline">
+                    <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+                    </div>    
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

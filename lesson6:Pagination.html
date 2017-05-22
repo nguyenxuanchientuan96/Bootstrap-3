@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Pagination</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+1) Tạo pagination đơn giản
+	Mọi thành phần tạo ra pagination đều nằm trong cặp thẻ ul & li, thêm vào thẻ ul class pagination thì mọi thứ coi như xong.
+	<div class="example">
+        <div class="container">
+            <div class="row">
+            <h2>Pagination Basic</h2>
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+2) Pagination sử dụng class active & disabled
+	Class active và disabled mục đích giúp người dùng nhận diện được họ dang ở trang nào. Cách sử dụng chi tiết như sau:
+
+    Class active sẽ hiển thị background để báo cho chúng ta biết đang ở trang nào.
+    Class disabled cấm chúng ta click vào trang nào đó (thường là trang hiện tại)
+
+     <div class="example">
+        <div class="container">
+            <div class="row">
+            <h2>Pagination with disabled and active</h2>
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li class="disabled"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+ 
+    </div>
+
+    3) Tạo nút previous & next với class pager
+    Class này giúp các bạn dễ dàng tạo ra 2 nút previous & next bằng cách thêm class pager vào thẻ ul.
+
+      <div class="example">
+        <div class="container">
+            <div class="row">
+            <h2>Pager</h2>
+                <ul class="pager">
+                    <li><a href="#">Previous</a></li>
+                    <li><a href="#">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
